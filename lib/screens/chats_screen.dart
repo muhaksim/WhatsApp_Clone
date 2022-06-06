@@ -12,7 +12,7 @@ class ChatsScreen extends StatelessWidget {
 
     return Scaffold(
       body: ListView.builder(
-          itemCount: 9,
+          itemCount: _users.length,
           itemBuilder: (context, index) {
             return Card(
               child: ListTile(

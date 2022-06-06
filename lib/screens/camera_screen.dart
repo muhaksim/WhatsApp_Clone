@@ -8,13 +8,23 @@ class CameraScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
-        IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt)),
-        Text(
-          "Take a picture now!",
-          style: TextStyle(fontSize: 30),
-        )
-      ]),
+      body: Container(
+        width: double.infinity,
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.camera_alt),
+                iconSize: 100,
+              ),
+              Text(
+                "Take a picture now!",
+                style: TextStyle(fontSize: 30),
+              )
+            ]),
+      ),
     );
   }
 }
